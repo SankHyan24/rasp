@@ -1,4 +1,10 @@
-.venv/
-
-
+# node js
 node_modules/
+package-lock.json
+
+# sqlite
+db/
+
+# test logs
+log.txt
+logm.txt
