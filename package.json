@@ -1,12 +1,13 @@
 {
-    "name": "loginform",
+    "name": "raspi-server",
     "version": "1.0.0",
-    "description": "",
+    "description": "A Raspberry Pi server, now used as a temperature monitor.",
     "main": "server.js",
     "scripts": {
-        "start": "nodemon server.js"
+        "start": "nodemon server.js",
+        "init": "node init.js"
     },
-    "author": "",
+    "author": "Charles Sun",
     "license": "ISC",
     "dependencies": {
         "body-parser": "^1.19.0",
@@ -14,5 +15,8 @@
         "knex": "^0.95.6",
         "nodemon": "^2.0.7",
         "sqlite3": "^5.1.7"
+    },
+    "devDependencies": {
+        "@types/body-parser": "^1.19.5"
     }
 }
