@@ -1,15 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>HOhoh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chuan Monitor</title>
+    
+    <link rel="stylesheet" href="css/index.css">
   </head>
+
   <body>
-    <div id="root">
-        <h1>Hello, World!</h1>
+
+  <!-- chart js sample -->
+  <div>
+    <canvas id="myChart"></canvas>
+  </div>
+  <script>
+   
+  </script>
+    
+  <!-- The House Info. Form -->
+  <div id="demo">
+    <div id="search" class="index_temperature_form">
+      <h1 class="heading2">Search</h1>
+      <input name="query" placeholder="name to search" class="select_h_name" v-model="searchQuery">
     </div>
+    <button class="select-btn">Select!</button>
+    <demo-grid :data="gridData" :columns="gridColumns" :filter-key="searchQuery">
+    </demo-grid>
+  </div>
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/index_form.js"></script>
+  <script src="js/index.js"></script>
   </body>
